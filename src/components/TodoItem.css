@@ -1,0 +1,17 @@
+.TodoItem{
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #134;
+  
+}
+.iscomplete{
+    opacity: 0.2;
+    text-decoration: line-through;
+}
+.TodoItem img{
+  padding: 0 0 0 10px;
+}
+.TodoItem p{
+  padding: 0 0 0 10px;
+}

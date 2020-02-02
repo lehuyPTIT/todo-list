@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  width:500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  margin-top: 100px;
 }
 
 .App-logo {
@@ -16,13 +20,28 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: crimson;
 }
 
 .App-link {
   color: #61dafb;
 }
+.App .header{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  padding: 0 0 0 10px;
+  align-items: center;
 
+}
+.App .header input{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+}
+.App .header input:focus{
+  outline: none;  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
