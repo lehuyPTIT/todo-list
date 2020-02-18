@@ -8,7 +8,7 @@ import './TodoItem.css';
 class TodoItem extends Component {
     render(){
         let url = logo;
-        const {item,onClick}=this.props;
+        const {item,onClick,onClear}=this.props;
         if(item.isComples===false) url=checkNon;
         return(
             <div className='TodoItem'>
@@ -16,6 +16,7 @@ class TodoItem extends Component {
                 <p className={classNames({'iscomplete':item.isComples})}>  
                     {item.title}
                 </p>
+                <button className='clear' onClick={onClear}>X</button>
             </div>
         );
     }

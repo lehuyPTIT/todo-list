@@ -1,0 +1,12 @@
+button{
+    color: inherit;
+    margin: 3px;
+    height: 20px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background: none;
+}
+.active{
+    border: 0.5px solid red;  
+}
