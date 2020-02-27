@@ -60,14 +60,16 @@
 }
 .footer p{
   font-size: 14px;
-  margin-right: auto;
 }
 .footer .count-item-none{
+  margin-right: auto;
   margin-left: 10px;
 }
 .footer .delete-todolist{
-
- 
+  margin-left:auto;
+}
+.footer .delete-todolist:hover{
+  cursor: pointer;
 }
 .isHollow{
   opacity: 0;

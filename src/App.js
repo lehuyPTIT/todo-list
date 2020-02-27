@@ -20,6 +20,7 @@ class App extends Component {
     this.onKeyUp=this.onKeyUp.bind(this);
     this.onChange=this.onChange.bind(this);
     this.onClickButton=this.onClickButton.bind(this);
+    this.onClickClear=this.onClickClear.bind(this);
   }
   onClear(item) {
     return(event)=>{
@@ -84,6 +85,13 @@ class App extends Component {
       });
     }
   }
+  onClickClear(){
+    this.setState({
+      todoItems:this.state.todoItems.filter(function(item){
+        return item.isComples===false;
+      })
+    })
+  }
   render(){
     let {todoItems}=this.state;
     let url=checkAll;
@@ -92,6 +100,7 @@ class App extends Component {
     for(let item of todoItems){
       if(item.isComples!==true)countIscomples++;
     }
+    
     switch(this.state.currentFilter){
       case 'completed':
       {
@@ -149,7 +158,7 @@ class App extends Component {
                   />
                 )
               }
-              <p className={classNames('delete-todolist', {'isHollow':count===countIscomples})}>Clear completed</p>
+              <p className={classNames('delete-todolist', {'isHollow':count===countIscomples}) } onClick={this.onClickClear} >Clear completed</p>
             </div>
       </div>
     );   
